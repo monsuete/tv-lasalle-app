@@ -29,5 +29,11 @@
     "react-tv-navigation": "^0.4.3",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react-animated-slider": "^2.0.0",
+    "react-calendar": "^3.4.0",
+    "react-router-dom": "^5.2.0"
   }
 }
