@@ -3,14 +3,16 @@ import ReactTV from "react-tv";
 import { withNavigation, withFocusable } from "react-tv-navigation";
 
 import Main from "./views/template/Main.jsx"
-// import Logo from "./views//template/Logo.jsx"
-// import Nav  from "./views/template/Nav.jsx"
+import Logo from "./views//template/Logo.jsx"
+import Nav  from "./views/template/Nav.jsx"
 
 class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <Main/>      
+        <Logo/>
+        <Main/> 
+        <Nav/>     
       </div>
     );
   }

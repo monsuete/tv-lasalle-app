@@ -1,40 +1,54 @@
-import React, { useState, useEffect } from "react";
+import React, {Component} from "react";
 
-import Slider from "react-animated-slider";
+import Sli from "react-animated-slider";
 
-import Api from "../../services/api";
+import api from "../../services/api";
 
-export default function Header() {
-    const [notices, setNotices] = useState([]);
+class Header extends Component {
+    constructor() {
+        super();
 
-    const fetch = async () => {
-        try {
-            const { data } = await Api.get("/notices");
+        this.state = {
+            notices: [],
+        };
+    }
 
-            setNotices(data);
-        } catch (err) {
-            console.log(err);
-        }
-    };
+    async fetchSlides() {
+        const response = await api.get("/notices");
+        this.setState({ notices: response.data });
 
-    useEffect(() => {
-        fetch();
-    }, []);
+        setTimeout(() => {
+            this.fetchSlides();
+        }, 1000 * 60 * 60);
+    }
 
-    return (
-        <header align="center" className="header d-nome d-sm-flex flex-column">
-            <Slider
+    async componentDidMount() {
+        this.fetchSlides();
+    }
+
+    
+    render() {
+        const { notices } = this.state;
+        console.log(notices);
+        return (
+            <header align="center" className="header d-nome d-sm-flex flex-column">
+            <Sli
                 previousButton={<span />}
                 nextButton={<span />}
                 autoplay={9000}
             >
                 {notices.map((notice, index) => (
-                    <div key={index}>
+                    <div className="slide" key={index}>
                         <h2>{notice.title}</h2>
                         <div>{notice.description}</div>
                     </div>
                 ))}
-            </Slider>
+            </Sli>
+                     
+            
         </header>
-    );
+        );
+    }
 }
+
+export default Header;

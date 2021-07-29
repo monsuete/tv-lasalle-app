@@ -1,8 +1,9 @@
 aside.menu-area {
     background-color: var(--bg-dark);
-    /* box-shadow:  */
-    /* 2px 0 10px 0 rgba(0, 0, 0, 0.12),
-    2px 0 10px 0 rgba(0, 0, 0, 0.09); */
+    height: 100%;
+    /* box-shadow:  
+     2px 0 10px 0 rgba(0, 0, 0, 0.12),
+    2px 0 10px 0 rgba(0, 0, 0, 0.09);  */
 }
 
 
@@ -14,18 +15,12 @@ aside.menu-area {
 .calendar {
     
     
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 5px;
+    margin-top: 90px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
     
 }
-
-div {
-    border-radius: 20px;
-}
-
-
 
     
     .react-calendar__navigation__arrow {

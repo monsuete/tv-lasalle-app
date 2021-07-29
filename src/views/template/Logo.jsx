@@ -1,10 +1,19 @@
-import { Link } from "react-router-dom";
-import React from "react";
+import React, { Component } from "react";
 
-export default (props) => (
-    <aside className="logo">
-        <Link to="/" className="logo">
-            <img src={logo} alt="logo" />
-        </Link>
-    </aside>
-);
+class Logo extends Component {
+
+    render() {
+
+        return (
+            <aside className="logo">
+                <a to="/" className="logo">
+                    <img src="src/img/lasalleb.png" alt="logo" />
+                   
+                </a>
+            </aside>
+           
+        );
+    }
+}
+
+export default Logo;

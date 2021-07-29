@@ -1,0 +1,43 @@
+
+
+div.cont {
+    margin-left: 10px;
+}
+
+div.teste{
+    color: white;
+    /* background-color: white; */
+    border-radius: 10px;
+    width: 90%;
+    
+    /* border-style: outset; */
+    margin: 5px 5px 5px 5px; 
+    
+}
+
+h1.day {
+    font-size:100px;
+    font-weight: 500;
+}
+
+h4.day-yar {
+    font-size: 40px;
+}
+
+/* h4.titulo{
+    margin: 5px 5px 5px 5px; 
+    background-color: rgb(229, 231, 122);
+    border-radius: 10px;
+    opacity: 0.6;
+    color: black;
+    word-spacing: 5px;
+    width: 90;
+    height: 60px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+} */
+
+
+
+
+

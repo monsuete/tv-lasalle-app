@@ -1,6 +1,7 @@
+
 header.header {
     background-color: #fbec5d;
-  
+    height: 73px;
     overflow: hidden;
     white-space: nowrap;
     box-shadow: var(--shadow);

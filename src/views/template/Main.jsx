@@ -4,8 +4,12 @@ import Slide from "./Slide";
 
 function Main() {
     return (
-        <div>
+        <div className="t">
+            <Header  />
+        <main>
+            
             <Slide />
+        </main>
         </div>
     );
 }
