@@ -5,7 +5,7 @@ import Slide from "./Slide";
 function Main() {
     return (
         <div className="t">
-            <Header  />
+            {/* <Header  /> */}
         <main>
             
             <Slide />
