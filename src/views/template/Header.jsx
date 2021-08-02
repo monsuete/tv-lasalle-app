@@ -31,14 +31,14 @@ class Header extends Component {
         const { notices } = this.state;
         console.log(notices);
         return (
-            <header align="center" className="header d-nome d-sm-flex flex-column">
+            <header align="center" className="header ">
             <Sli
                 previousButton={<span />}
                 nextButton={<span />}
                 autoplay={9000}
             >
                 {notices.map((notice, index) => (
-                    <div className="slide" key={index}>
+                    <div className="test" key={index}>
                         <h2>{notice.title}</h2>
                         <div>{notice.description}</div>
                     </div>

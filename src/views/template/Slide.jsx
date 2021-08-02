@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Slider from "react-animated-slider";
 
-import api from "../../services/api";
+import api from "../../services/api.js";
 
 class Slide extends Component {
     constructor() {
