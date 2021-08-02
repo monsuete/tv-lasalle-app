@@ -31,6 +31,7 @@
     "webpack-dev-server": "^2.9.4"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
     "axios": "^0.21.1",
     "react-animated-slider": "^2.0.0",
     "react-calendar": "^3.4.0",
