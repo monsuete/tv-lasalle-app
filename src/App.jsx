@@ -2,23 +2,21 @@ import React from "react";
 import ReactTV from "react-tv";
 import { withNavigation, withFocusable } from "react-tv-navigation";
 
-
-import Main from "./views/template/Main.jsx"
-import Logo from "./views//template/Logo.jsx"
-import Nav from "./views/template/Nav.jsx"
-
 class App extends React.Component {
   render() {
     return (
-      // <div className="app">
-      //   <Logo/>
-      //   <Main/> 
-      //   <Nav/>     
-
-
-      // </div>
-     <div className="container mx-auto   ">
-       texto
+     <div className="app">
+       <div className="sidebar">
+         Sidebar
+       </div>
+       <div className="container">
+         <div className="header">
+           Header
+         </div>
+         <div className="slider">
+           Slide
+         </div>
+       </div>
      </div>
     );
   }
