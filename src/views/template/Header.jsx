@@ -16,14 +16,14 @@ class Header extends Component {
     async fetchSlides() {
         const response = await api.get("/notices");
         this.setState({ notices: response.data });
-
-        setTimeout(() => {
-            this.fetchSlides();
-        }, 1000 * 60 * 60);
     }
 
     async componentDidMount() {
         this.fetchSlides();
+
+        setTimeout(() => {
+            this.fetchSlides();
+        }, 1000 * 60 * 60);
     }
 
     
