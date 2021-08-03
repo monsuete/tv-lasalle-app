@@ -32,21 +32,19 @@ class Header extends Component {
         console.log(notices);
         return (
             <header align="center" className="header ">
-            <Sli
-                previousButton={<span />}
-                nextButton={<span />}
-                autoplay={9000}
-            >
-                {notices.map((notice, index) => (
-                    <div className="test" key={index}>
-                        <h2>{notice.title}</h2>
-                        <div>{notice.description}</div>
-                    </div>
-                ))}
-            </Sli>
-                     
-            
-        </header>
+                <Sli
+                    previousButton={<span />}
+                    nextButton={<span />}
+                    autoplay={12000}
+                >
+                    {notices.map((notice, index) => (
+                        <div className="test" key={index}>
+                            <h1>{notice.title}</h1>
+                            <p>{notice.description}</p>
+                        </div>
+                    ))}
+                </Sli>
+            </header>
         );
     }
 }

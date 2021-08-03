@@ -24,7 +24,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: yellow;
+  
   width: 80%;
   height: 100vh;
 }
@@ -36,13 +36,15 @@ body {
 }
 
 .container .header {
-  background-color: #f4f808;
+  
   height: 20vh;
   width: 100%;
 }
 
+
+
 .container .slider {
-  background-color: #035159;
+  
   height: 80vh;
   width: 100%;
 }

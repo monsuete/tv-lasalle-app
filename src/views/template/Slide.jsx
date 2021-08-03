@@ -34,7 +34,7 @@ class Slide extends Component {
                 <Slider
                     previousButton={<span />}
                     nextButton={<span />}
-                    autoplay={2000}
+                    autoplay={9000}
                 >
                     {posts.map((post, index) => (
                         <div
