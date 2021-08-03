@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Slider from "react-animated-slider";
 
-import api from "../../services/api";
+import api from "../../services/api.js";
 
 class Slide extends Component {
     constructor() {
@@ -34,7 +34,7 @@ class Slide extends Component {
                 <Slider
                     previousButton={<span />}
                     nextButton={<span />}
-                    autoplay={2000}
+                    autoplay={9000}
                 >
                     {posts.map((post, index) => (
                         <div

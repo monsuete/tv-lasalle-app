@@ -1,26 +1,31 @@
 
 
 div.cont {
-    margin-left: 10px;
+    margin-left: 6px;
+    
 }
 
 div.teste{
     color: white;
     /* background-color: white; */
-    border-radius: 10px;
+    
     width: 90%;
     
+    
     /* border-style: outset; */
-    margin: 5px 5px 5px 5px; 
+    
     
 }
 
 h1.day {
+    
     font-size:100px;
-    font-weight: 500;
+    height: 50px;
+    
 }
 
 h4.day-yar {
+    
     font-size: 40px;
 }
 

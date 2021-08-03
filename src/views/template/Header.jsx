@@ -16,14 +16,14 @@ class Header extends Component {
     async fetchSlides() {
         const response = await api.get("/notices");
         this.setState({ notices: response.data });
-
-        setTimeout(() => {
-            this.fetchSlides();
-        }, 1000 * 60 * 60);
     }
 
     async componentDidMount() {
         this.fetchSlides();
+
+        setTimeout(() => {
+            this.fetchSlides();
+        }, 1000 * 60 * 60);
     }
 
     
@@ -31,22 +31,20 @@ class Header extends Component {
         const { notices } = this.state;
         console.log(notices);
         return (
-            <header align="center" className="header d-nome d-sm-flex flex-column">
-            <Sli
-                previousButton={<span />}
-                nextButton={<span />}
-                autoplay={9000}
-            >
-                {notices.map((notice, index) => (
-                    <div className="slide" key={index}>
-                        <h2>{notice.title}</h2>
-                        <div>{notice.description}</div>
-                    </div>
-                ))}
-            </Sli>
-                     
-            
-        </header>
+            <header align="center" className="header ">
+                <Sli
+                    previousButton={<span />}
+                    nextButton={<span />}
+                    autoplay={12000}
+                >
+                    {notices.map((notice, index) => (
+                        <div className="test" key={index}>
+                            <h1>{notice.title}</h1>
+                            <p>{notice.description}</p>
+                        </div>
+                    ))}
+                </Sli>
+            </header>
         );
     }
 }
