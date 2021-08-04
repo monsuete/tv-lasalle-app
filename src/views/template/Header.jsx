@@ -31,7 +31,7 @@ class Header extends Component {
         const { notices } = this.state;
         console.log(notices);
         return (
-            <header align="center" className="header ">
+            <header  className="header ">
                 <Sli
                     previousButton={<span />}
                     nextButton={<span />}

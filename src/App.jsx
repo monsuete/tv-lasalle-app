@@ -2,7 +2,7 @@ import React from "react";
 import ReactTV from "react-tv";
 import { withNavigation, withFocusable } from "react-tv-navigation";
 
-import Slide from "./views/template/Slide";
+import Carousel from "./views/template/Carousel";
 import Header from "./views/template/Header";
 import Logo from "./views/template/Logo";
 import Nav from "./views/template/Nav";
@@ -19,8 +19,8 @@ class App extends React.Component {
                     <div className="header">
                         <Header />
                     </div>
-                    <div className="slider">
-                        <Slide />
+                    <div className="carousel">
+                        <Carousel />
                     </div>
                 </div>
             </div>

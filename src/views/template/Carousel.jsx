@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-import Slider from "react-animated-slider";
+import S from "react-animated-slider";
 
 import api from "../../services/api.js";
 
-class Slide extends Component {
+class Carousel extends Component {
     constructor() {
         super();
 
@@ -31,13 +31,14 @@ class Slide extends Component {
         console.log(posts);
         return (
             <aside className="test">
-                <Slider
+                <S
                     previousButton={<span />}
                     nextButton={<span />}
                     autoplay={9000}
                 >
                     {posts.map((post, index) => (
                         <div
+                            
                             className="url"
                             key={index}
                             style={{
@@ -45,10 +46,10 @@ class Slide extends Component {
                             }}
                         ></div>
                     ))}
-                </Slider>
+                </S>
             </aside>
         );
     }
 }
 
-export default Slide;
+export default Carousel;
