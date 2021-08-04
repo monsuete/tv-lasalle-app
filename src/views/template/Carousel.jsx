@@ -38,11 +38,13 @@ class Carousel extends Component {
                 >
                     {posts.map((post, index) => (
                         <div
-                            
                             className="url"
                             key={index}
                             style={{
-                                background: `url('http://${global.location.hostname}:3333/files/${post.key}') no-repeat center center`,
+                                background: `url('http://${global.location.hostname}:3333/files/${post.key}')`,
+                                backgroundRepeat: "no-repeat",
+                                backgroundPosition: "center",
+                                backgroundSize: "cover",
                             }}
                         ></div>
                     ))}

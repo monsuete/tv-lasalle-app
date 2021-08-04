@@ -2,7 +2,7 @@
 
 header.header {
     background-color: #fbec5d;
-    text-align: center; 
+    text-align: center;
    
     
 }
@@ -11,15 +11,15 @@ header.header p{
     text-align: center;
     color: black;
     padding: 0px;
-    /* width: 100vh; */
+    
     align-items: center;
     font-size:40px;
-    margin-top: 0px;
+    margin-top: -20px;
 
 }
 
 header.header h1{
-    margin-top: 0px;
+    margin-top: 30px;
     text-align: center;
     color: black;
   
@@ -32,6 +32,9 @@ header.header h1{
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	overflow: hidden
+	overflow: hidden;
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
